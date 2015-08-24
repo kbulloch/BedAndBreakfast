@@ -6,22 +6,28 @@
   <script src="lib/angular-ui-router.js"></script>
   <script src="app.js"></script>
   <script src="controllers/ViewController.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-touch.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
   <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300' rel='stylesheet' type='text/css'>
 </head>
 <body ng-controller="ViewCtrl">
-
-  <div class="jumbotron">
-    <h1 id="jumbo-text">Boulay Inn on Kauai</h1>
-  </div>
-
-  <navbar></navbar>
-
   <div class="container">
-    <div ui-view="main" ng-show="main"></div>
-    <div ui-view="other" ng-show="other"></div>
-  </div>
+    <div id="main-wrapper">
 
+      <navbar></navbar>
+
+      <div>
+        <div ui-view="main" ng-show="main"></div>
+        <div ui-view="gallery" ng-show="gallery"></div>
+        <div ui-view="other" ng-show="other"></div>
+      </div>
+
+    </div>
+  </div>
 </body>
 </html>
