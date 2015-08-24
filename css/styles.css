@@ -6,3 +6,19 @@
 body {
   background: #009999;
 }
+
+.navbar {
+  background-color: rgba(0,0,0,0);
+  border: none;
+  border-radius: 0px;
+  text-align: center;
+  /*margin-left: 5%;*/
+  /*position: relative;*/
+  /*top: 250px;*/
+}
+
+.navbar > h3 {
+  display: inline;
+  margin: 8%;
+  cursor: pointer;
+}

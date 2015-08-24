@@ -7,7 +7,7 @@ app.controller("ViewCtrl", function ViewCtrl($scope) {
     $scope.other = false;
   };
 
-  $scope.showWork = function() {
+  $scope.showOther = function() {
     $scope.main = false;
     $scope.other = true;
   };
