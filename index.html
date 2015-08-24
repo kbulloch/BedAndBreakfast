@@ -1,0 +1,23 @@
+<html ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <title>Bed n Breaky</title>
+  <script src="lib/angular.js"></script>
+  <script src="lib/angular-ui-router.js"></script>
+  <script src="app.js"></script>
+  <script src="controllers/ViewController.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300' rel='stylesheet' type='text/css'>
+</head>
+<body ng-controller="ViewCtrl">
+
+  <navbar></navbar>
+
+  <div class="container">
+    <div ui-view="main" ng-show="main"></div>
+    <div ui-view="other" ng-show="other"></div>
+  </div>
+
+</body>
+</html>
