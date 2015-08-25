@@ -1,6 +1,7 @@
 * {
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
+  font-size: 20;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
   border: none;
   border-radius: 0px;
   text-align: center;
+  padding: 5px;
   /*margin-left: 5%;*/
   /*position: relative;*/
   /*top: 250px;*/
@@ -23,19 +25,28 @@ body {
   cursor: pointer;
 }
 
-.jumbotron {
-  width: 100%;
-  text-align: center;
-  background-image: url('../img/hanalei.jpg');
-  background-position: 0 -250px;
-  background-size: 100%;
-  min-height: 250px;
+#main-wrapper {
+  width: 80%;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  background: grey;
 }
 
-#jumbo-text {
-  color: rgba(255,255,255,0.6);
-  font-weight: 100;
-  position: absolute;
-  top: 150px;
-  left: 10%;
+.slideshow-image {
+  width: 640px;
+  height: 360px;
+}
+
+#slider_container {
+  overflow: hidden;
+}
+
+#main-img {
+  width: 80%;
+}
+
+.row {
+  margin-left: 2%;
+  margin-right: 2%;
 }

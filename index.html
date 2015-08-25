@@ -6,11 +6,10 @@
   <script src="lib/angular-ui-router.js"></script>
   <script src="app.js"></script>
   <script src="controllers/ViewController.js"></script>
-  <script src="js/scripts.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-animate.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-touch.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
+  <script src="js/jssor.js"></script>
+  <script src="js/jssor.slider.js"></script>
+  <script src="js/scripts.js"></script>
   <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300' rel='stylesheet' type='text/css'>
@@ -26,6 +25,22 @@
         <div ui-view="gallery" ng-show="gallery"></div>
         <div ui-view="other" ng-show="other"></div>
       </div>
+
+      <!-- jssor-slider -->
+      <!-- <div id="slider_container" style="position: relative; top: 0px; left: 0px; width: 600px; height: 300px;">
+        <div data-u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 600px; height: 300px;">
+          <div>
+            <img data-u="image" src="../img/beach1.jpg" alt="beach1" />
+          </div>
+          <div>
+            <img data-u="image" src="../img/beach2.jpg" alt="beach1" />
+          </div>
+          <div>
+            <img data-u="image" src="../img/beach3.jpg" alt="beach1" />
+          </div>
+        </div>
+      </div> -->
+      <!-- end jssor-slider -->
 
     </div>
   </div>
