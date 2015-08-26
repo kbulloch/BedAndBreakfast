@@ -17,7 +17,7 @@ body {
   margin-bottom: 0;
 }
 
-.navbar > .row > .col-sm-9 {
+.navbar > .row > .col-sm-8 {
   margin: 1% 0;
 }
 
@@ -25,24 +25,24 @@ body {
   margin: .5% 0;
 }
 
-.navbar > .row > .col-sm-9 > h3 {
+.navbar > .row > .col-sm-8 > h3 {
   display: inline;
-  margin: 8%;
+  margin: 1%;
   cursor: pointer;
+}
+
+.navbar > .row > .col-sm-8 > h3:hover {
+  text-shadow: 0 0 8px white;
 }
 
 .navbar > .row > .col-sm-3 > h1 {
   display: inline;
-  margin: 0
+  margin: 0;
 }
 
 #main-wrapper {
   width: 70%;
-  /*max-width: 900px;*/
   position: absolute;
-  /*top: 5%;
-  left: 10%;*/
-  /*margin-bottom: 10%;*/
   margin: 3% auto;
   padding-bottom: 3%;
   background: #ffffff;
@@ -74,4 +74,15 @@ body {
 
 .text-block {
   margin: 3%;
+}
+
+.gallery-thumbnail {
+  max-height: 200px;
+}
+
+#title-img {
+  position: relative;
+  height: 20%;
+  left: 10%;
+  top: 10%;
 }
